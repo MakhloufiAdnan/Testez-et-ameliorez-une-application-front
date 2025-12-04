@@ -22,4 +22,8 @@
     - Ils concernent uniquement des Observables HttpClient, qui complètent automatiquement, ce qui supprime en général le risque de fuite mémoire.
     - La documentation Angular recommande une stratégie générale de nettoyage des abonnements, principalement pertinente pour les Observables long-lived (form valueChanges, router events, Subjects, etc.).
     - Dans cette application, il n’y a pas d’Observables de ce type, donc la gestion actuelle des abonnements respecte les bonnes pratiques.
-  * S'il faut rester rigide et nettoyer tous les subscribes, la class `LoginComponent` a été modifiée.
+  * S'il faut rester rigide et nettoyer tous les subscribes, la class `LoginComponent` a été modifiée (pour exemple).
+
+  ### Correction de l'utilisation de ng* :
+
+  - Observé dans : app.component,list.component, me.component, login.component, register.component, detail.component et form.component.
