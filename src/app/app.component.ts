@@ -7,6 +7,7 @@ import {CommonModule} from "@angular/common";
 import {MaterialModule} from "./shared/material.module";
 
 @Component({
+  standalone: true,
   selector: 'app-root',
   imports: [CommonModule, MaterialModule, RouterOutlet, RouterModule],
   templateUrl: './app.component.html',
