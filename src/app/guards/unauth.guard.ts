@@ -6,8 +6,8 @@ import { SessionService } from "../core/service/session.service";
 export class UnauthGuard implements CanActivate {
 
   constructor(
-    private router: Router,
-    private sessionService: SessionService,
+    private readonly router: Router,
+    private readonly sessionService: SessionService,
   ) {
   }
 

@@ -12,9 +12,9 @@ import { CommonModule } from "@angular/common";
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  private authService = inject(AuthService);
-  private fb = inject(FormBuilder);
-  private router = inject(Router);
+  private readonly authService = inject(AuthService);
+  private readonly fb = inject(FormBuilder);
+  private readonly router = inject(Router);
   public onError = false;
 
   public form = this.fb.group({

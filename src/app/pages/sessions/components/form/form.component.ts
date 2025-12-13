@@ -16,13 +16,13 @@ import { CommonModule } from "@angular/common";
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-  private route = inject(ActivatedRoute);
-  private fb = inject(FormBuilder);
-  private matSnackBar = inject(MatSnackBar);
-  private sessionApiService = inject(SessionApiService);
-  private sessionService = inject(SessionService);
-  private teacherService = inject(TeacherService);
-  private router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
+  private readonly fb = inject(FormBuilder);
+  private readonly matSnackBar = inject(MatSnackBar);
+  private readonly sessionApiService = inject(SessionApiService);
+  private readonly sessionService = inject(SessionService);
+  private readonly teacherService = inject(TeacherService);
+  private readonly router = inject(Router);
 
   public onUpdate: boolean = false;
   public sessionForm: FormGroup | undefined;

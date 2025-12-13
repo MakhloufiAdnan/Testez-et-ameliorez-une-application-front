@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "e2e:ci": "ng run yoga:e2e-ci",
-    "cy:all:coverage": "rimraf .nyc_output coverage && npm run cy:all && nyc report --reporter=lcov --reporter=html --reporter=text-summary",
+    "cy:all:coverage": "rimraf .nyc_output coverage/cypress && npm run cy:all && nyc report --reporter=lcov --reporter=html --reporter=text-summary && nyc check-coverage --lines 80 --branches 80 --functions 80 --statements 80",
     "cy:all": "start-server-and-test \"ng run yoga:serve-coverage\" http://localhost:4200 \"cypress run\"",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
